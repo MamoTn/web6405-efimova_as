@@ -13,3 +13,13 @@
 - 4 страницы html
 - Отдельный файл css
 - Были оспользованы таблицы, перечисления, ссылки, картинки (котов!)
+  
+## Лабораторная работа №3
+- Реализованы функции: `isInteger`, `even`, `sumTo`, `recSumTo`, `factorial`, `isBinary`, `fibonacci`, `getOperationFn`, `sequence`, `deepEqual`. 
+- Все тесты зелёные
+
+Для запуска проекта:
+```
+npm install
+npm test
+```
