@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио долгов - Обратная связь</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="header__title">Форма обратной связи</h1>
+        <p class="header__subtitle">Помогите в борьбе с прокрастинацией - ваш совет может изменить всё!</p>
+        <div class="nav">
+            <a href="main.html" class="nav__link">О лабе</a>
+            <a href="debts.html" class="nav__link">Долги</a>
+            <a href="about.html" class="nav__link">О студенте</a>
+            <a href="gallery.html" class="nav__link">Галерея котов</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="content-section">
+            <div class="feedback-form">
+                <h2 class="feedback-form__title">Ваше сообщение может спасти семестр!</h2>
+                <p class="feedback-form__subtitle">Заполните форму ниже, чтобы поделиться советом, поддержкой или просто хорошим словом</p>
+                
+                <form id="feedbackForm" class="feedback-form__form">
+                    <div class="feedback-form__group">
+                        <label for="username" class="feedback-form__label">Ваше имя:</label>
+                        <input type="text" id="username" name="username" class="feedback-form__input" placeholder="Как к вам обращаться?">
+                    </div>
+                    
+                    <div class="feedback-form__group">
+                        <div class="feedback-form__checkbox-group">
+                            <input type="checkbox" id="anonymous" name="anonymous" class="feedback-form__checkbox">
+                            <label for="anonymous" class="feedback-form__checkbox-label">Отправить анонимно</label>
+                        </div>
+                    </div>
+                    
+                    <div class="feedback-form__group">
+                        <label for="messageType" class="feedback-form__label">Тип сообщения:</label>
+                        <select id="messageType" name="messageType" class="feedback-form__select">
+                            <option value="advice">Совет</option>
+                            <option value="sympathy">Сочувствие</option>
+                            <option value="motivation">Мотивационная речь</option>
+                            <option value="story">История из жизни</option>
+                            <option value="joke">Шутка</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    
+                    <div class="feedback-form__group">
+                        <label for="message" class="feedback-form__label">Ваше сообщение:</label>
+                        <textarea id="message" name="message" rows="6" class="feedback-form__textarea" placeholder="Напишите здесь всё, что может помочь в борьбе с прокрастинацией..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="feedback-form__button">Отправить в бездну прокрастинации</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="successMessage" class="success-message" style="display: none;">
+        <div class="success-message__content">
+            <div class="success-message__icon">✓</div>
+            <h3 class="success-message__title">Сообщение отправлено!</h3>
+            <p class="success-message__text">Спасибо за вашу помощь в борьбе с прокрастинацией!</p>
+            <button class="success-message__button" onclick="location.href='main.html'">Продолжить прокрастинировать</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p class="footer__text">Портфолио студенческих долгов &copy; 2025</p>
+    </footer>
+
+    <script src="feedback.js"></script>
+</body>
+</html>
