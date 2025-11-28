@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Портфолио долгов - Мои долги</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <h1 class="header__title">Мои долги и несданные работы</h1>
+        <p class="header__subtitle">Здесь собраны все мои невыполненные обещания и просроченные задания</p>
+        <div class="nav">
+            <a href="main.html" class="nav__link">О лабе</a>
+            <a href="debts.html" class="nav__link nav__link_active">Долги</a>
+            <a href="about.html" class="nav__link">О студенте</a>
+            <a href="gallery.html" class="nav__link">Галерея котов</a>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="content-section">
+            <h2 class="content-section__title">Таблица текущих задолженностей</h2>
+            <p class="content-section__text">Этот список постоянно пополняется новыми "достижениями" в прокрастинации</p>
+            
+            <table class="debts-table">
+                <thead class="debts-table__head">
+                    <tr class="debts-table__row">
+                        <th class="debts-table__header">Предмет</th>
+                        <th class="debts-table__header">Тип работы</th>
+                        <th class="debts-table__header">Дедлайн</th>
+                        <th class="debts-table__header">Статус</th>
+                        <th class="debts-table__header">Примечание</th>
+                    </tr>
+                </thead>
+                <tbody class="debts-table__body">
+                    <tr class="debts-table__row">
+                        <td class="debts-table__cell debts-table__cell_left">Web-программирование</td>
+                        <td class="debts-table__cell">Лабораторная работа №2</td>
+                        <td class="debts-table__cell">19.10.2025</td>
+                        <td class="debts-table__cell debts-table__cell_status-pending">В процессе</td>
+                        <td class="debts-table__cell debts-table__cell_right">Начала, но отвлеклась на YouTube</td>
+                    </tr>
+                    <tr class="debts-table__row">
+                        <td class="debts-table__cell debts-table__cell_left">Численные методы математической физики</td>
+                        <td class="debts-table__cell">1 этап курсовой работы</td>
+                        <td class="debts-table__cell">1.10.2025</td>
+                        <td class="debts-table__cell debts-table__cell_status-overdue">Просрочено</td>
+                        <td class="debts-table__cell debts-table__cell_right">Создала только титульник</td>
+                    </tr>
+                    <tr class="debts-table__row">
+                        <td class="debts-table__cell debts-table__cell_left">Математическое моделирование</td>
+                        <td class="debts-table__cell">Лабораторная работа №1</td>
+                        <td class="debts-table__cell">24.10.2025</td>
+                        <td class="debts-table__cell debts-table__cell_status-pending">В процессе</td>
+                        <td class="debts-table__cell debts-table__cell_right">Ещё не начинала</td>
+                    </tr>
+                    <tr class="debts-table__row">
+                        <td class="debts-table__cell debts-table__cell_left">Параллельное программирование</td>
+                        <td class="debts-table__cell">Лабораторная работа №2</td>
+                        <td class="debts-table__cell">25.10.2025</td>
+                        <td class="debts-table__cell debts-table__cell_status-pending">В процессе</td>
+                        <td class="debts-table__cell debts-table__cell_right">Пропустила 2 срока сдачи</td>
+                    </tr>
+                    <tr class="debts-table__row">
+                        <td class="debts-table__cell debts-table__cell_left">Менеджмент разработки систем<br>искусственного интеллекта</td>
+                        <td class="debts-table__cell">Лабораторная по группам</td>
+                        <td class="debts-table__cell">31.09.2025</td>
+                        <td class="debts-table__cell debts-table__cell_status-overdue">Просрочено</td>
+                        <td class="debts-table__cell debts-table__cell_right">Запланировали начать обсуждение о сроках для первого этапа</td>
+                    </tr>
+                    <tr class="debts-table__row">
+                        <td class="debts-table__cell debts-table__cell_left">Web-программирование</td>
+                        <td class="debts-table__cell">Лабораторная работа №4</td>
+                        <td class="debts-table__cell">23.11.2025</td>
+                        <td class="debts-table__cell debts-table__cell_status-overdue">Просрочено</td>
+                        <td class="debts-table__cell debts-table__cell_right">Обновить таблицу текущих задолженностей</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <div class="feedback-promo">
+            <h3 class="feedback-promo__title">Знаете способ как побороть прокрастинацию? Или хотите просто посочувствовать? Напишите мне!</h3>
+            <p class="feedback-promo__text">Ваши идеи могут спасти меня от вечного откладывания дел на потом</p>
+            <a href="feedback.html" class="feedback-promo__button">Помочь студенту</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p class="footer__text">Портфолио студенческих долгов &copy; 2025</p>
+    </footer>
+</body>
+</html>
